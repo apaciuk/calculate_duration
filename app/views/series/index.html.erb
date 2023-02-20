@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Series</h1>
+
+<div id="series">
+  <% @series.each do |series| %>
+    <%= render series %>
+    <p>
+      <%= link_to "Show this series", series %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New series", new_series_path %>
